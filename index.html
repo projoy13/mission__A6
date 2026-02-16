@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- tailwind and desiy -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header>my name is</header>
+ <header class=" max-w-7xl
+ mx-auto bg-white">
+    <div class="navbar bg-base-100 shadow-sm">
+          <div class="navbar-start ">
+    <a class="btn btn-ghost text-2xl  text-sky-500  "> SwiftCart</a>
+  </div>
+  <div class="navbar-middel  sm:hidden lg:block">
+    <div class="dropdown ">
+      <div class="" >
+      <ul class="flex space-x-3  ">
+        <li><a class="hover:text-blue-600 ">Home</a></li>
+        <li><a class="hover:text-blue-600 ">Product</a></li>
+        <li><a class="hover:text-blue-600 ">About</a></li>
+        <li><a class="hover:text-blue-600 ">contact</a></li>
+      </ul>
+       </div>
+    </div>
+  </div>
+
+  <div class="navbar-end">
+    
+    <button class="btn btn-ghost btn-circle">
+      <div class="indicator">
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+        <span class="badge badge-xs badge-primary indicator-item">0</span>
+      </div>
+    </button>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <span></span><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
+        <li><a class="hover:text-blue-600 ">Home</a></li>
+        <li><a class="hover:text-blue-600 ">Products</a></li>
+        <li><a class="hover:text-blue-600 ">About</a></li>
+        <li><a class="hover:text-blue-600 ">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+ </header>
+ 
+
+<section class=" 2nd  max-w-7xl mx-auto bg-white">
+  <div class="relative">
+    
+    <img
+      src="./mission_restart_a6/Assets/banner-image.png"
+      alt=""
+      class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"
+    />
+
+    
+    <div class="absolute inset-0 flex flex-col justify-center px-6 sm:px-10 text-white bg-black/30">
+      <h1 class="text-2xl sm:text-4xl md:text-6xl font-semibold max-w-xl">
+        Best Collection for you
+      </h1>
+
+      <p class="mt-4 text-sm sm:text-lg max-w-xl">
+        Discover the latest trend in fashion and electronics and more
+      </p>
+
+      <div class="mt-6">
+        <button class="btn btn-primary">
+          Shop Now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section class=" 3rd space-y-3 ">
+    <h1 class="text-3xl font-extrabold text-center">Why Choose us</h1>
+    <p class="text-xl text-center text-gray-400">we provide the best shopping experience with top notch service</p>
+    <div class="    grid lg:grid-cols-4  justify-item-center content-center ">
+        <div class="card bg-gray-100 w-40 h-70 shadow-sm">
+  <div class="card-body">
+    <div class=" w-[40px] h-[40px] rounded-lg flex items-center justify-center bg-white ">
+    <span class=" w-[35px] h-[35px] rounded-lg flex items-center justify-center bg-blue-100"><i class="fa-solid fa-truck text-blue-600 "></i></span>
+    
+</div>
+    <h2 class="card-title"> First delvery</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+   
+  </div>
+</div>
+        <div class="card bg-gray-100 w-50 shadow-sm">
+  <div class="card-body">
+    <h2 class="card-title">Card title!</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+        <div class="card bg-gray-100 w-50 shadow-sm">
+  <div class="card-body">
+    <h2 class="card-title">Card title!</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+        <div class="card bg-gray-100 w-50 shadow-sm">
+  <div class="card-body">
+    <h2 class="card-title">Card title!</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+    </div>
+    
+
+ </section>
     
 </body>
 </html>
