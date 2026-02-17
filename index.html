@@ -10,6 +10,46 @@
       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<style>
+  .product { 
+    
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background-color: rgb(175, 36, 36);
+  
+  }
+    img { width: 100px;
+       height: 100px; 
+       object-fit: contain;
+      
+       display: flex;
+       justify-items: center;
+       justify-content: center;
+    
+    }
+    .product-img{
+       background-color: rgb(173, 170, 170);
+      display: flex;
+      justify-content: center;
+    }
+
+    #high-ratecontainer {
+      border: 2px solid #f9f7f7; 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product-card {
+      width: 300px;
+      height:max-content;
+      padding: 2px;
+      margin: auto;
+      
+      border:2px solid rgb(236, 225, 225)
+      
+    }
+</style>
 <body>
  <header class=" max-w-7xl
  mx-auto bg-white">
@@ -63,8 +103,7 @@
     <img
       src="./mission_restart_a6/Assets/banner-image.png"
       alt=""
-      class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"
-    />
+      class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"/>
 
     
     <div class="absolute inset-0 flex flex-col justify-center px-6 sm:px-10 text-white bg-black/30">
@@ -85,14 +124,14 @@
   </div>
 </section>
 
- <section class=" 3rd space-y-3 ">
-    <h1 class="text-3xl font-extrabold text-center">Why Choose us</h1>
-    <p class="text-xl text-center text-gray-400">we provide the best shopping experience with top notch service</p>
-    <div class="    grid lg:grid-cols-4  justify-item-center content-center ">
-        <div class="card bg-gray-100 w-40 h-70 shadow-sm">
-  <div class="card-body">
+ <section class=" 3rd  mt-10 items-center justify-center  ">
+    <h1 class="text-3xl font-extrabold text-center mt-5">Why Choose us</h1>
+    <p class="text-xl text-center text-gray-400 mt-5">we provide the best shopping experience with top notch service</p>
+    <div class=" flex flex-col sm:flex-row sm:flex-wrap sm:justify-center space-y-10 sm:space-y-0 sm:gap-6 mt-5  ">
+        <div class="card bg-gray-100 w-50  shadow-sm ">
+  <div class="card-body ">
     <div class=" w-[40px] h-[40px] rounded-lg flex items-center justify-center bg-white ">
-    <span class=" w-[35px] h-[35px] rounded-lg flex items-center justify-center bg-blue-100"><i class="fa-solid fa-truck text-blue-600 "></i></span>
+    <span class=" w-[35px] h-[35px] rounded-lg flex items-center justify-center bg-blue-100"><i class="fa-solid fa-truck text-blue-600  "></i></span>
     
 </div>
     <h2 class="card-title"> First delvery</h2>
@@ -102,35 +141,60 @@
 </div>
         <div class="card bg-gray-100 w-50 shadow-sm">
   <div class="card-body">
-    <h2 class="card-title">Card title!</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+     <div class=" w-[40px] h-[40px] rounded-lg flex items-center justify-center bg-white ">
+    <span class=" w-[35px] h-[35px] rounded-lg flex items-center justify-center bg-blue-100"><i class="fa-regular fa-headphones text-blue-600"></i></span>
+    
+</div>
+    <h2 class="card-title">24/7 support </h2>
+    <p>Our  support items is available around the clock to assist you</p>
+    
   </div>
 </div>
         <div class="card bg-gray-100 w-50 shadow-sm">
   <div class="card-body">
-    <h2 class="card-title">Card title!</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+     <div class=" w-[40px] h-[40px] rounded-lg flex items-center justify-center bg-white   ">
+    <span class=" w-[35px] h-[35px] rounded-lg flex items-center justify-center bg-blue-100"><i class="fa-solid fa-shield-heart text-blue-600"></i></span>
+    
+</div>
+    <h2 class="card-title">Security payment</h2>
+    <p>Experience  safe and secure transaction</p>
+    
   </div>
 </div>
-        <div class="card bg-gray-100 w-50 shadow-sm">
+        <div class="card bg-gray-100 w-50 shadow-sm ">
   <div class="card-body">
-    <h2 class="card-title">Card title!</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+     <div class=" w-[40px] h-[40px] rounded-lg flex items-center justify-center bg-white   ">
+    <span class=" w-[35px] h-[35px] rounded-lg flex items-center justify-center bg-blue-100"><i class="fa-solid fa-arrow-rotate-right text-blue-600"></i></span>
+    
+</div>
+    <h2 class="card-title">Easy Returns</h2>
+    <p>Not satisfied ?Return out productys within in a 30 days</p>
+    
   </div>
 </div>
     </div>
+    <section class="4th ">
+        <h1 class="text-2xl  font-extrabold">Trending now</h1>
+
+         <div id="high-ratecontainer">
+
+         </div>
+    </section>
+<section>
+  
+ 
+
+</section>
+
+
+
+
+    
+  
     
 
- </section>
+ 
+ <script src="script.js"></script>
     
 </body>
 </html>
