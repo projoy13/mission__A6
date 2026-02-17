@@ -35,12 +35,12 @@
         
 
 <div class=" product-img flex justify-between">
-          <img src="${product.image}" alt="${product.title}">
+          <img src="${product.image}" alt="${product.title} class=trending-img">
 </div> 
 
          <div class="flex justify-between">
-         <h2>${product.category}</h2>
-          <p>Rating: ${product.rating.rate} <i class="fa-solid fa-star text-yellow-600"></i></p>
+         <h2 class=" border solid rounded-2xl p-0.5 mt-2 w-20px bg-sky-100 text-sky-800">${product.category}</h2>
+          <p class="mt-2 ">Rating: ${product.rating.rate} <i class="fa-solid fa-star text-yellow-600"></i></p>
 
   </div> 
           

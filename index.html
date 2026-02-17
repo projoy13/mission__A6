@@ -15,22 +15,27 @@
     
     padding: 10px; 
     margin-bottom: 10px; 
-    background-color: rgb(175, 36, 36);
+   
   
   }
-    img { width: 100px;
-       height: 100px; 
+    .trending-img {
+      
        object-fit: contain;
       
-       display: flex;
-       justify-items: center;
-       justify-content: center;
+       
+        
     
     }
     .product-img{
-       background-color: rgb(173, 170, 170);
-      display: flex;
-      justify-content: center;
+       background-color: rgb(151, 144, 144);
+     
+       width: 295px;
+       height: 150px;
+       display: flex;
+       justify-items: center;
+       justify-content: center;
+        border-radius: 10px;
+       
     }
 
     #high-ratecontainer {
@@ -41,12 +46,13 @@
       gap: 20px;
     }
     .product-card {
-      width: 300px;
+      width: 301px;
       height:max-content;
       padding: 2px;
       margin: auto;
-      
-      border:2px solid rgb(236, 225, 225)
+      border-radius: 10px;
+      border:2px solid rgb(229, 219, 219)
+
       
     }
 </style>
@@ -103,19 +109,19 @@
     <img
       src="./mission_restart_a6/Assets/banner-image.png"
       alt=""
-      class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"/>
+      class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover realtive"/>
 
     
-    <div class="absolute inset-0 flex flex-col justify-center px-6 sm:px-10 text-white bg-black/30">
-      <h1 class="text-2xl sm:text-4xl md:text-6xl font-semibold max-w-xl">
+    <div class=" flex flex-col justify-center px-6 sm:px-10 text-white ">
+      <h1 class="text-2xl sm:text-4xl md:text-6xl font-semibold max-w-xl absolute top-40  ">
         Best Collection for you
       </h1>
 
-      <p class="mt-4 text-sm sm:text-lg max-w-xl">
+      <p class="mt-4 text-sm sm:text-lg  max-w-xl absolute bottom-40 ">
         Discover the latest trend in fashion and electronics and more
       </p>
 
-      <div class="mt-6">
+      <div class="mt-6 absolute bottom-10">
         <button class="btn btn-primary">
           Shop Now
         </button>
@@ -173,18 +179,97 @@
   </div>
 </div>
     </div>
-    <section class="4th ">
+    </section>
+    <section class="4th  mt-5 mx-auto">
         <h1 class="text-2xl  font-extrabold">Trending now</h1>
 
-         <div id="high-ratecontainer">
+         <div id="high-ratecontainer" class="mt-5">
 
          </div>
     </section>
-<section>
+
+
+  <footer class="bg-gray-900 text-gray-300">
+  <div
+    class="max-w-7xl mx-auto px-6 py-12
+           flex flex-col gap-10
+           sm:flex-row sm:flex-wrap sm:gap-8
+           lg:flex-nowrap lg:justify-between"
+  >
+
+    <!-- Brand -->
+    <div class="max-w-sm">
+      <h1 class="text-2xl font-bold text-white mb-4">SwiftCart</h1>
+      <p class="text-sm leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+        provident? Unde nobis nisi cumque amet cupiditate totam vero!
+      </p>
+    </div>
+
+    <!-- Quick links -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li class="hover:text-white cursor-pointer">Home</li>
+        <li class="hover:text-white cursor-pointer">Products</li>
+        <li class="hover:text-white cursor-pointer">About</li>
+        <li class="hover:text-white cursor-pointer">Contacts</li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Support</h4>
+      <ul class="space-y-2">
+        <li class="hover:text-white cursor-pointer">FAQ</li>
+        <li class="hover:text-white cursor-pointer">Shipping</li>
+        <li class="hover:text-white cursor-pointer">Returns</li>
+        <li class="hover:text-white cursor-pointer">Privacy Policy</li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="max-w-sm">
+      <h4 class="text-lg font-semibold text-white mb-4">
+        Subscribe to our Newsletter
+      </h4>
+      <p class="text-sm mb-4">
+        Get updates about new products and offers.
+      </p>
+
+      <div class="join w-full">
+        <input
+          type="email"
+          placeholder="your mail"
+          class="input input-bordered join-item w-full"
+        />
+        <button class="btn btn-primary join-item">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+ 
+  <div class="border-t border-gray-700 text-left py-4 text-sm flex justify-between p-10">
+
+    <div> <h1>2026 SwiftCart. All rights reserved.</h1></div>
+    <div>
+      <span><i class="fa-brands fa-facebook"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-square-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+      <span><i class="fa-solid fa-envelope"></i></span>
+    </div>
+  </div>
+</footer>
+
+
   
  
 
-</section>
+
 
 
 
