@@ -102,7 +102,7 @@ const displayAllproducts=(products)=>{
           <div>
       <img src="${product.image}" alt="${product.title}" class="w-40 h-40 object-contain mb-3">
       <h2 class="font-semibold mb-1">${product.title}</h2>
-      <p class="text-sm mb-2">Rating: ${product.rating.rate} ⭐ (${product.rating.count})</p>
+      <p class="text-sm mb-2">Rating: ${product.rating.rate} <i class="fa-solid fa-star text-yellow-600"></i> (${product.rating.count})</p>
       <p class="text-lg font-bold mb-3">$${product.price}</p>
       <button class="btn btn-primary w-full">Shop Now</button>
       </div>
