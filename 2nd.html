@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- font link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- tailwind and desiy -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+   <header class="max-w-7xl mx-auto bg-white">
+  <div class="navbar bg-base-100 shadow-sm">
+
+    
+    <div class="navbar-start">
+      <a class="btn btn-ghost text-2xl text-sky-500">SwiftCart</a>
+    </div>
+
+    
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 space-x-3">
+        <li><a class="hover:text-blue-600">Home</a></li>
+        <li><a class="hover:text-blue-600">Products</a></li>
+        <li><a class="hover:text-blue-600">About</a></li>
+        <li><a class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="navbar-end">
+
+   
+      <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <i class="fa-solid fa-cart-shopping text-lg"></i>
+          <span class="badge badge-xs badge-primary indicator-item">0</span>
+        </div>
+      </button>
+
+      
+      <div class="dropdown dropdown-end lg:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>Products</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+ <section class="text-center ">
+    <h1 class="text-4xl font-extrabold">All Products</h1>
+<div class="flex flex-wrap gap-4 justify-center items-center">
+    <div class="">
+    <button class="btn btn-outline btn-primary rounded-2xl">All</button>
+      </div>
+      <div id="all-catagory" class="flex flex-wrap gap-4 justify-center lg:justify-start items-center">
+      
+        
+    </div>
+</div>
+    
+
+ </section>
+ <section class="All-productscatagory grid grid-cols-1 lg:grid-cols-4 gap-6">
+  
+
+    
+
+ </section>
+ <footer class="bg-gray-900 text-gray-300">
+  <div
+    class="max-w-7xl mx-auto px-6 py-12
+           flex flex-col gap-10
+           sm:flex-row sm:flex-wrap sm:gap-8
+           lg:flex-nowrap lg:justify-between"
+  >
+
+   
+    <div class="max-w-sm">
+      <h1 class="text-2xl font-bold text-white mb-4">SwiftCart</h1>
+      <p class="text-sm leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+        provident? Unde nobis nisi cumque amet cupiditate totam vero!
+      </p>
+    </div>
+
+    
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li class="hover:text-white cursor-pointer">Home</li>
+        <li class="hover:text-white cursor-pointer">Products</li>
+        <li class="hover:text-white cursor-pointer">About</li>
+        <li class="hover:text-white cursor-pointer">Contacts</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Support</h4>
+      <ul class="space-y-2">
+        <li class="hover:text-white cursor-pointer">FAQ</li>
+        <li class="hover:text-white cursor-pointer">Shipping</li>
+        <li class="hover:text-white cursor-pointer">Returns</li>
+        <li class="hover:text-white cursor-pointer">Privacy Policy</li>
+      </ul>
+    </div>
+
+    
+    <div class="max-w-sm">
+      <h4 class="text-lg font-semibold text-white mb-4">
+        Subscribe to our Newsletter
+      </h4>
+      <p class="text-sm mb-4">
+        Get updates about new products and offers.
+      </p>
+
+      <div class="join w-full">
+        <input
+          type="email"
+          placeholder="your mail"
+          class="input input-bordered join-item w-full"
+        />
+        <button class="btn btn-primary join-item">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+ 
+  <div class="border-t border-gray-700 text-left py-4 text-sm flex justify-between p-10">
+
+    <div> <h1>2026 SwiftCart. All rights reserved.</h1></div>
+    <div>
+      <span><i class="fa-brands fa-facebook"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-square-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+      <span><i class="fa-solid fa-envelope"></i></span>
+    </div>
+  </div>
+</footer>
+    
+</body>
+<script src="script.js"></script>
+</html>
