@@ -21,10 +21,6 @@
       const highRateContainer = document.getElementById("high-ratecontainer");
       highRateContainer.innerHTML = "";
 
-      
-    
-
-     
       for (let i = 0; i < 3; i++) {
         const product = products[i];
 
@@ -54,6 +50,74 @@
         highRateContainer.appendChild(cardDiv);
       }
     };
+    const allCategory = () => {
+  fetch("https://fakestoreapi.com/products/categories")
+    .then(res => res.json())
+    .then(categories => displayAllCategory(categories))
+    .catch(err => console.error(err));
+};
+
+const displayAllCategory = (categories) => {
+  const levelContainer = document.getElementById("all-catagory");
+  levelContainer.innerHTML = "";
+
+  for (let category of categories) {
+    console.log(category);
+
+    const btnDiv = document.createElement("div");
+
+    btnDiv.innerHTML = `
+
+
+    <div>
+      <button class="btn btn-outline btn-primary rounded-2xl">
+        
+        ${category}
+      </button>
+      </div>
+
+
+   
+    `;
+
+    levelContainer.appendChild(btnDiv);
+  }
+};
+
+
+const AllProductscatagory = () => {
+      fetch("https://fakestoreapi.com/products")
+        .then(res => res.json())
+        .then(products => displayAllproducts(products))
+       
+ };
+const displayAllproducts=(products)=>{
+    const container=document.querySelector(".All-productscatagory")
+    container.innerHTML="";
+    products.forEach(product=>{
+        const card=document.createElement("div");
+        card.className="product-card bg-white shadow rounded-lg p-4 w-60 flex flex-col items-center text-center";
+        card.innerHTML = `
+         <div class="">
+          <div>
+      <img src="${product.image}" alt="${product.title}" class="w-40 h-40 object-contain mb-3">
+      <h2 class="font-semibold mb-1">${product.title}</h2>
+      <p class="text-sm mb-2">Rating: ${product.rating.rate} ⭐ (${product.rating.count})</p>
+      <p class="text-lg font-bold mb-3">$${product.price}</p>
+      <button class="btn btn-primary w-full">Shop Now</button>
+      </div>
+       <div>
+    `;
+
+    container.appendChild(card);
+  });
+};
+
+
+
+AllProductscatagory();
+// call function
+allCategory();
 
    
     loadAllProducts();
